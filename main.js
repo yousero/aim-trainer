@@ -2,7 +2,7 @@
 /**
  * Aim Trainer <https://yousero.github.io/aim-trainer/>
  * @author yousero yousero.art@gmail.com
- * @version 0.0.1
+ * @version 0.0.2
  */
 
 const canvas = document.getElementById('canvas')
@@ -26,7 +26,7 @@ const circle = {
   x: 320,
   y: 180,
   radius: 40,
-  color: '#d0d0d0',
+  color: '#5aa0fa',
   draw() {
     ctx.beginPath()
     ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, true)
@@ -47,7 +47,7 @@ canvas.addEventListener('click', function (e) {
 
   const rgbColor = `rgb(${data[0]} ${data[1]} ${data[2]} / ${data[3] / 255})`
 
-  if (rgbColor == 'rgb(208 208 208 / 1)') {
+  if (rgbColor == 'rgb(90 160 250 / 1)') {
     background.draw()
     
     circle.x = Math.min(
