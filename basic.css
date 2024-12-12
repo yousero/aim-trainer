@@ -40,9 +40,3 @@ a:hover {
 template {
   display: none;
 }
-
-.container {
-  display: flex;
-  max-width: 720px;
-  margin: auto;
-}

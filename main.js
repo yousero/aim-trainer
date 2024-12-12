@@ -2,7 +2,7 @@
 /**
  * Aim Trainer <https://yousero.github.io/aim-trainer/>
  * @author yousero yousero.art@gmail.com
- * @version 0.0.2
+ * @version 0.0.3
  */
 
 const canvas = document.getElementById('canvas')

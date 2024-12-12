@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  max-width: 720px;
+  margin: auto;
+}
+
+#canvas {
+  cursor: url(aim.cur) 8 8, auto;
+}
