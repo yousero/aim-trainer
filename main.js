@@ -2,7 +2,7 @@
 /**
  * Aim Trainer <https://yousero.github.io/aim-trainer/>
  * @author yousero yousero.art@gmail.com
- * @version 0.0.3
+ * @version 0.0.4
  */
 
 const canvas = document.getElementById('canvas')
@@ -38,6 +38,24 @@ const circle = {
 
 circle.draw()
 
+const score = {
+  x: canvas.width / 3,
+  y: canvas.height - 20,
+  text: 'SCORE: ',
+  score: 0,
+  font: 'sans-serif',
+  size: '20px',
+  color: '#010101',
+  draw() {
+    ctx.fillStyle = this.color
+    ctx.font = String(this.size) + ' ' + this.font
+    ctx.fillText(this.text + String(this.score), this.x, this.y)
+    console.log('test')
+  }
+}
+
+score.draw()
+
 canvas.addEventListener('click', function (e) {
   const bounding = canvas.getBoundingClientRect()
   const x = e.clientX - bounding.left
@@ -57,5 +75,8 @@ canvas.addEventListener('click', function (e) {
       Math.max(canvas.height * Math.random(), circle.radius), 
       canvas.height - circle.radius)
     circle.draw()
+
+    score.score += 1
+    score.draw()
   }
 }, false)
