@@ -50,7 +50,6 @@ const score = {
     ctx.fillStyle = this.color
     ctx.font = String(this.size) + ' ' + this.font
     ctx.fillText(this.text + String(this.score), this.x, this.y)
-    console.log('test')
   }
 }
 
